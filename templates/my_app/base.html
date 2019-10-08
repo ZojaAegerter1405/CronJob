@@ -1,0 +1,49 @@
+{% extends 'my_app/base.html' %}
+
+<html>
+ <head>
+     <meta charset="UTF-8">
+     <title>Cron-Job</title>
+ </head>
+<body>
+
+    <div>
+        <h1>Cron-Job erstellen</h1>
+
+        <p>Füllen Sie das folgende Formular aus, um einen Cron-Job anzulegen.
+        Es werden sowohl http- als auch https-URLs unterstützt.
+        Falls die URL mit HTTP-Authentifizierung gesichert ist
+        (z.B. ".htaccess"-Passwortschutz), hinterlegen Sie bitte
+        auch die entsprechenden Zugangsdaten, damit
+        wir die Webseite korrekt abrufen können. </p>
+
+        <p><i>Hinweis:</i> Weitere erweiterte Einstellungen für Ihren Cron-Job können Sie nach dem
+        Anlegen vornehmen, indem Sie den Job bearbeiten. </p>
+
+        <div>
+            Titel, Adresse
+        </div>
+
+        <div>
+            Erfordert HTTP-Authentifizierung
+        </div>
+
+        <div>
+            Ausführung
+        </div>
+
+        <div>
+            Benachrichtigungen
+        </div>
+
+        <div>
+            Allgemein
+        </div>
+
+         <p>Mit der Erstellung des Cron-Jobs erklären Sie, dass Sie entweder der
+        Inhaber der abzurufenden Webseite
+        sind oder im Einverständnig des Inhabers handeln. </p>
+
+    </div>
+</body>
+</html>
