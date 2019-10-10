@@ -1,0 +1,21 @@
+
+{% load crispy_forms_tags %}
+
+{% block title %}Login{% endblock %}
+
+{% block toggle_login %}{% endblock %}
+
+{% block content %}
+    <form method="post" accept-charset="utf-8">
+        {{ forms }}
+        {% csrf_token %}
+
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    <a href="{% url 'reset' %}">Reset Passwort</a>
+        <a href="{% url 'register' %}">Registrieren</a>
+
+
+    </form>
+{% endblock %}
